@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Lexical
+
+  Created by Floriane Sanchis on 30/09/2017.
+  Copyright © 2017 Floriane Sanchis. All rights reserved.
+*/
+
+ACCOUNT = "Compte";
+STATISTICS = "Statistiques";
+STORE = "Magasin";
+PURCHASE = "Achats";
+PARAMETERS = "Parametres";
+EVALUATION = "Évaluer notre application";
+PAGE_FACEBOOK = "Notre page facebook";
+BY_THE_WAY = "À propos";
