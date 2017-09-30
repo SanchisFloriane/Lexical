@@ -10,17 +10,17 @@
 		F42C30201F7EF4A9005E8E27 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C301F1F7EF4A9005E8E27 /* MenuTableViewCell.swift */; };
 		F42C30281F7F0BC6005E8E27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F42C302A1F7F0BC6005E8E27 /* Localizable.strings */; };
 		F46AC67A1F7F7AD800C7B3CB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F46AC6791F7F7AD800C7B3CB /* SWRevealViewController.m */; };
+		F4790A101F80043F008218EB /* Lexical.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4790A0E1F80043F008218EB /* Lexical.xcdatamodeld */; };
 		F49A0F931F7EE230009EAF4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49A0F921F7EE230009EAF4D /* AppDelegate.swift */; };
-		F49A0F9B1F7EE230009EAF4D /* Lexical.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F49A0F991F7EE230009EAF4D /* Lexical.xcdatamodeld */; };
 		F49A0F9D1F7EE230009EAF4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49A0F9C1F7EE230009EAF4D /* Assets.xcassets */; };
 		F49A0FA01F7EE230009EAF4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49A0F9E1F7EE230009EAF4D /* LaunchScreen.storyboard */; };
 		F4A6BBD91F7F9AB500CF9554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46AC67C1F7F8F9700C7B3CB /* Main.storyboard */; };
-		F4A6BBDD1F7F9E2E00CF9554 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6BBDC1F7F9E2E00CF9554 /* PresentationViewController.swift */; };
 		F4A6BBE71F7FA1EB00CF9554 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4A6BBE61F7FA1EA00CF9554 /* Default-568h@2x.png */; };
 		F4A6BBE81F7FA25100CF9554 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4A6BBE21F7FA0FA00CF9554 /* Info.plist */; };
-		F4F517791F7F76D5009264D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F517781F7F76D4009264D8 /* ViewController.swift */; };
-		F4F5177D1F7F76F3009264D8 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5177A1F7F76F3009264D8 /* MessageViewController.swift */; };
-		F4F5177E1F7F76F3009264D8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5177B1F7F76F3009264D8 /* MenuViewController.swift */; };
+		F4F2863A1F7FE3360008F2EE /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F286361F7FE3350008F2EE /* MessageViewController.swift */; };
+		F4F2863B1F7FE3360008F2EE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F286371F7FE3350008F2EE /* MenuViewController.swift */; };
+		F4F2863C1F7FE3360008F2EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F286381F7FE3350008F2EE /* ViewController.swift */; };
+		F4F2863D1F7FE3360008F2EE /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F286391F7FE3350008F2EE /* PresentationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,20 +29,20 @@
 		F46AC6781F7F77E900C7B3CB /* Lexical-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lexical-Bridging-Header.h"; sourceTree = "<group>"; };
 		F46AC6791F7F7AD800C7B3CB /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		F46AC67D1F7F8F9700C7B3CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4790A0F1F80043F008218EB /* Lexical.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lexical.xcdatamodel; sourceTree = "<group>"; };
 		F49A0F8F1F7EE230009EAF4D /* Lexical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lexical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49A0F921F7EE230009EAF4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F49A0F9A1F7EE230009EAF4D /* Lexical.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lexical.xcdatamodel; sourceTree = "<group>"; };
 		F49A0F9C1F7EE230009EAF4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F49A0F9F1F7EE230009EAF4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F4A6BBDC1F7F9E2E00CF9554 /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		F4A6BBDE1F7FA04800CF9554 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		F4A6BBDF1F7FA08400CF9554 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4A6BBE11F7FA0FA00CF9554 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = fr; path = fr.lproj/Info.plist; sourceTree = "<group>"; };
 		F4A6BBE31F7FA10800CF9554 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
 		F4A6BBE61F7FA1EA00CF9554 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		F4F517781F7F76D4009264D8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F4F5177A1F7F76F3009264D8 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
-		F4F5177B1F7F76F3009264D8 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F4F286361F7FE3350008F2EE /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		F4F286371F7FE3350008F2EE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F4F286381F7FE3350008F2EE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4F286391F7FE3350008F2EE /* PresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		F4F517801F7F779A009264D8 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,30 +85,46 @@
 		F49A0F911F7EE230009EAF4D /* Lexical */ = {
 			isa = PBXGroup;
 			children = (
-				F46AC6781F7F77E900C7B3CB /* Lexical-Bridging-Header.h */,
-				F46AC6791F7F7AD800C7B3CB /* SWRevealViewController.m */,
-				F4F517801F7F779A009264D8 /* SWRevealViewController.h */,
-				F4F517781F7F76D4009264D8 /* ViewController.swift */,
-				F4F5177B1F7F76F3009264D8 /* MenuViewController.swift */,
-				F4F5177A1F7F76F3009264D8 /* MessageViewController.swift */,
-				F4A6BBDC1F7F9E2E00CF9554 /* PresentationViewController.swift */,
-				F4A2F8731F7F74040082254E /* Model */,
+				F4790A0E1F80043F008218EB /* Lexical.xcdatamodeld */,
 				F4A2F8721F7F73F90082254E /* Controller */,
+				F4A00F1E1F7FE48500EDCFBB /* Libraries */,
+				F4A2F8731F7F74040082254E /* Model */,
 				F42C30251F7F0B34005E8E27 /* Internalization */,
-				F49A0F921F7EE230009EAF4D /* AppDelegate.swift */,
-				F42C301F1F7EF4A9005E8E27 /* MenuTableViewCell.swift */,
-				F49A0F9C1F7EE230009EAF4D /* Assets.xcassets */,
+				F4A00F1F1F7FE49E00EDCFBB /* Delegate */,
 				F46AC67C1F7F8F9700C7B3CB /* Main.storyboard */,
 				F49A0F9E1F7EE230009EAF4D /* LaunchScreen.storyboard */,
 				F4A6BBE21F7FA0FA00CF9554 /* Info.plist */,
-				F49A0F991F7EE230009EAF4D /* Lexical.xcdatamodeld */,
+				F49A0F9C1F7EE230009EAF4D /* Assets.xcassets */,
 			);
 			path = Lexical;
+			sourceTree = "<group>";
+		};
+		F4A00F1E1F7FE48500EDCFBB /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F46AC6781F7F77E900C7B3CB /* Lexical-Bridging-Header.h */,
+				F46AC6791F7F7AD800C7B3CB /* SWRevealViewController.m */,
+				F4F517801F7F779A009264D8 /* SWRevealViewController.h */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		F4A00F1F1F7FE49E00EDCFBB /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F49A0F921F7EE230009EAF4D /* AppDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 		F4A2F8721F7F73F90082254E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F42C301F1F7EF4A9005E8E27 /* MenuTableViewCell.swift */,
+				F4F286371F7FE3350008F2EE /* MenuViewController.swift */,
+				F4F286361F7FE3350008F2EE /* MessageViewController.swift */,
+				F4F286391F7FE3350008F2EE /* PresentationViewController.swift */,
+				F4F286381F7FE3350008F2EE /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,14 +213,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F517791F7F76D5009264D8 /* ViewController.swift in Sources */,
-				F49A0F9B1F7EE230009EAF4D /* Lexical.xcdatamodeld in Sources */,
+				F4F2863B1F7FE3360008F2EE /* MenuViewController.swift in Sources */,
+				F4F2863A1F7FE3360008F2EE /* MessageViewController.swift in Sources */,
+				F4F2863D1F7FE3360008F2EE /* PresentationViewController.swift in Sources */,
+				F4F2863C1F7FE3360008F2EE /* ViewController.swift in Sources */,
 				F42C30201F7EF4A9005E8E27 /* MenuTableViewCell.swift in Sources */,
 				F49A0F931F7EE230009EAF4D /* AppDelegate.swift in Sources */,
-				F4A6BBDD1F7F9E2E00CF9554 /* PresentationViewController.swift in Sources */,
+				F4790A101F80043F008218EB /* Lexical.xcdatamodeld in Sources */,
 				F46AC67A1F7F7AD800C7B3CB /* SWRevealViewController.m in Sources */,
-				F4F5177D1F7F76F3009264D8 /* MessageViewController.swift in Sources */,
-				F4F5177E1F7F76F3009264D8 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,15 +377,17 @@
 		F49A0FA51F7EE230009EAF4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Lexical/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = floriane.sanchis.Lexical;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Lexical/Lexical-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lexical/Libraries/Lexical-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,15 +397,17 @@
 		F49A0FA61F7EE230009EAF4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Lexical/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = floriane.sanchis.Lexical;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Lexical/Lexical-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lexical/Libraries/Lexical-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -417,12 +437,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F49A0F991F7EE230009EAF4D /* Lexical.xcdatamodeld */ = {
+		F4790A0E1F80043F008218EB /* Lexical.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F49A0F9A1F7EE230009EAF4D /* Lexical.xcdatamodel */,
+				F4790A0F1F80043F008218EB /* Lexical.xcdatamodel */,
 			);
-			currentVersion = F49A0F9A1F7EE230009EAF4D /* Lexical.xcdatamodel */;
+			currentVersion = F4790A0F1F80043F008218EB /* Lexical.xcdatamodel */;
 			path = Lexical.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
