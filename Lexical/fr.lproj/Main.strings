@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "H67-7R-Ecq"; */
+"H67-7R-Ecq.text" = "Acccueil";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "HCr-zf-Kn4"; */
+"HCr-zf-Kn4.title" = "Item";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "USj-v7-uUk"; */
+"USj-v7-uUk.text" = "Label";
+
+/* Class = "UILabel"; text = "Message"; ObjectID = "an7-pK-RKR"; */
+"an7-pK-RKR.text" = "Message";
