@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AddListViewController.carouselDidEndScrollingAnimation(_:):AddListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "carousel.currentItemView">
+            </PersistentString>
+            <PersistentString
+               value = "btn.currentImage">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AddListViewController.collectionView(_:didSelectItemAt:):AddListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.imgCarousel.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AddListViewController.collectionView(_:cellForItemAt:):AddListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.imgCarousel.image">
+            </PersistentString>
+            <PersistentString
+               value = "cell.imgCarousel.image.getFileName()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
