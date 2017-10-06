@@ -66,20 +66,20 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         {
             let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             
-            let desController = mainStoryboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+            let desController = mainStoryboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
             
             let newFrontViewController = UINavigationController.init(rootViewController:desController)
             revealViewController.pushFrontViewController(newFrontViewController, animated: true)
         }
-        else if cell.lblMenuName.text == "Message"
+      /*  else if cell.lblMenuName.text == "Nom"
         {
             let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             
-            let desController = mainStoryboard.instantiateViewController(withIdentifier: "MessageViewController") as! MessageViewController
+            let desController = mainStoryboard.instantiateViewController(withIdentifier: "AddListViewController") as! AddListViewController
             
             let newFrontViewController = UINavigationController.init(rootViewController:desController)
             revealViewController.pushFrontViewController(newFrontViewController, animated: true)
-        }
+        }*/
     }
     
     func getNameSectionMenu() -> [String]
