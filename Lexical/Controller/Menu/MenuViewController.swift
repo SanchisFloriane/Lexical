@@ -76,7 +76,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         else if cell.lblMenuName.text == NSLocalizedString("ACCOUNT", comment: "")
         {
-            desController = mainStoryboard.instantiateViewController(withIdentifier: "AddWordViewController") as! AddWordViewController
+            desController = mainStoryboard.instantiateViewController(withIdentifier: "UpdateWordViewController") as! UpdateWordViewController
         }
         
         if desController != nil

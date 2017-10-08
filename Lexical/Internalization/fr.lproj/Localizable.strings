@@ -9,6 +9,7 @@
 ACCOUNT = "Compte";
 ACTION_CANCEL = "Annuler";
 BACK = "Retour";
+BACK_GESTION = "Retour gestion";
 BY_THE_WAY = "À propos";
 CAMERA_NOT_AVAILABLE = "Camera non disponible.";
 DESCRIPTION = "Description";

@@ -13,6 +13,10 @@
 		F42C30281F7F0BC6005E8E27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F42C302A1F7F0BC6005E8E27 /* Localizable.strings */; };
 		F46AC67A1F7F7AD800C7B3CB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F46AC6791F7F7AD800C7B3CB /* SWRevealViewController.m */; };
 		F4790A101F80043F008218EB /* Lexical.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4790A0E1F80043F008218EB /* Lexical.xcdatamodeld */; };
+		F483830E1F8A33540055C118 /* UpdateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483830D1F8A33540055C118 /* UpdateListViewController.swift */; };
+		F48383101F8A34A00055C118 /* UpdateThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483830F1F8A34A00055C118 /* UpdateThemeViewController.swift */; };
+		F48383121F8A357F0055C118 /* UpdateSubThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48383111F8A357F0055C118 /* UpdateSubThemeViewController.swift */; };
+		F48383141F8A358F0055C118 /* UpdateWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48383131F8A358F0055C118 /* UpdateWordViewController.swift */; };
 		F4933BCD1F88F0DE00B9FD37 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4933BCC1F88F0DE00B9FD37 /* UIScrollViewExtension.swift */; };
 		F499589D1F892D69000C6CCD /* AddThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499589C1F892D69000C6CCD /* AddThemeViewController.swift */; };
 		F49A0F931F7EE230009EAF4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49A0F921F7EE230009EAF4D /* AppDelegate.swift */; };
@@ -44,6 +48,10 @@
 		F46AC67D1F7F8F9700C7B3CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4790A0F1F80043F008218EB /* Lexical.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lexical.xcdatamodel; sourceTree = "<group>"; };
 		F4790A141F800F61008218EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F483830D1F8A33540055C118 /* UpdateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateListViewController.swift; sourceTree = "<group>"; };
+		F483830F1F8A34A00055C118 /* UpdateThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateThemeViewController.swift; sourceTree = "<group>"; };
+		F48383111F8A357F0055C118 /* UpdateSubThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSubThemeViewController.swift; sourceTree = "<group>"; };
+		F48383131F8A358F0055C118 /* UpdateWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWordViewController.swift; sourceTree = "<group>"; };
 		F4933BCC1F88F0DE00B9FD37 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		F499589C1F892D69000C6CCD /* AddThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThemeViewController.swift; sourceTree = "<group>"; };
 		F49A0F8F1F7EE230009EAF4D /* Lexical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lexical.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,7 +59,7 @@
 		F49A0F9C1F7EE230009EAF4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F49A0F9F1F7EE230009EAF4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F49AC38B1F86B04B00A0AC38 /* iCarousel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
-		F49AC38C1F86B04B00A0AC38 /* iCarousel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		F49AC38C1F86B04B00A0AC38 /* iCarousel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; usesTabs = 0; };
 		F49AC38F1F86D27000A0AC38 /* DLRadioButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A6BBDE1F7FA04800CF9554 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		F4A6BBDF1F7FA08400CF9554 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -136,14 +144,14 @@
 		F49A0F911F7EE230009EAF4D /* Lexical */ = {
 			isa = PBXGroup;
 			children = (
-				F4910F521F843199003EE16C /* SubClassSwift */,
-				F4F02B151F80F5AF005DC869 /* Extension */,
-				F4790A0E1F80043F008218EB /* Lexical.xcdatamodeld */,
 				F4A2F8721F7F73F90082254E /* Controller */,
+				F4A00F1F1F7FE49E00EDCFBB /* Delegate */,
+				F4F02B151F80F5AF005DC869 /* Extension */,
+				F4910F521F843199003EE16C /* SubClassSwift */,
+				F4790A0E1F80043F008218EB /* Lexical.xcdatamodeld */,
 				F4A00F1E1F7FE48500EDCFBB /* Libraries */,
 				F4A2F8731F7F74040082254E /* Model */,
 				F42C30251F7F0B34005E8E27 /* Internalization */,
-				F4A00F1F1F7FE49E00EDCFBB /* Delegate */,
 				F46AC67C1F7F8F9700C7B3CB /* Main.storyboard */,
 				F49A0F9E1F7EE230009EAF4D /* LaunchScreen.storyboard */,
 				F4A6BBE21F7FA0FA00CF9554 /* Info.plist */,
@@ -175,15 +183,10 @@
 		F4A2F8721F7F73F90082254E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F42C301F1F7EF4A9005E8E27 /* MenuTableViewCell.swift */,
-				F4F286371F7FE3350008F2EE /* MenuViewController.swift */,
-				F4F286361F7FE3350008F2EE /* AddListViewController.swift */,
-				F4F286391F7FE3350008F2EE /* PresentationViewController.swift */,
-				F4F286381F7FE3350008F2EE /* HomeViewController.swift */,
-				F40D568C1F88B5F70020CC54 /* ByTheWayViewController.swift */,
-				F499589C1F892D69000C6CCD /* AddThemeViewController.swift */,
-				F4D7FA271F8A1D8B0022086F /* AddSubThemeViewController.swift */,
-				F4D7FA291F8A256A0022086F /* AddWordViewController.swift */,
+				F4D7FA2B1F8A2FB00022086F /* Creation */,
+				F4D7FA2D1F8A2FED0022086F /* Menu */,
+				F4D7FA2C1F8A2FDF0022086F /* Modification */,
+				F4D7FA2E1F8A300A0022086F /* Start */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +196,47 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F4D7FA2B1F8A2FB00022086F /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				F4F286361F7FE3350008F2EE /* AddListViewController.swift */,
+				F499589C1F892D69000C6CCD /* AddThemeViewController.swift */,
+				F4D7FA271F8A1D8B0022086F /* AddSubThemeViewController.swift */,
+				F4D7FA291F8A256A0022086F /* AddWordViewController.swift */,
+			);
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		F4D7FA2C1F8A2FDF0022086F /* Modification */ = {
+			isa = PBXGroup;
+			children = (
+				F483830D1F8A33540055C118 /* UpdateListViewController.swift */,
+				F483830F1F8A34A00055C118 /* UpdateThemeViewController.swift */,
+				F48383111F8A357F0055C118 /* UpdateSubThemeViewController.swift */,
+				F48383131F8A358F0055C118 /* UpdateWordViewController.swift */,
+			);
+			path = Modification;
+			sourceTree = "<group>";
+		};
+		F4D7FA2D1F8A2FED0022086F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F42C301F1F7EF4A9005E8E27 /* MenuTableViewCell.swift */,
+				F4F286371F7FE3350008F2EE /* MenuViewController.swift */,
+				F4F286381F7FE3350008F2EE /* HomeViewController.swift */,
+				F40D568C1F88B5F70020CC54 /* ByTheWayViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		F4D7FA2E1F8A300A0022086F /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				F4F286391F7FE3350008F2EE /* PresentationViewController.swift */,
+			);
+			path = Start;
 			sourceTree = "<group>";
 		};
 		F4F02B151F80F5AF005DC869 /* Extension */ = {
@@ -344,7 +388,11 @@
 				F4F2863D1F7FE3360008F2EE /* PresentationViewController.swift in Sources */,
 				F4F2863C1F7FE3360008F2EE /* HomeViewController.swift in Sources */,
 				F4D7FA2A1F8A256A0022086F /* AddWordViewController.swift in Sources */,
+				F48383141F8A358F0055C118 /* UpdateWordViewController.swift in Sources */,
+				F48383101F8A34A00055C118 /* UpdateThemeViewController.swift in Sources */,
 				F42C30201F7EF4A9005E8E27 /* MenuTableViewCell.swift in Sources */,
+				F48383121F8A357F0055C118 /* UpdateSubThemeViewController.swift in Sources */,
+				F483830E1F8A33540055C118 /* UpdateListViewController.swift in Sources */,
 				F4F02B171F80F5C2005DC869 /* UIImageExtension.swift in Sources */,
 				F49A0F931F7EE230009EAF4D /* AppDelegate.swift in Sources */,
 				F40D568D1F88B5F70020CC54 /* ByTheWayViewController.swift in Sources */,
