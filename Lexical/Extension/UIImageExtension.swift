@@ -29,7 +29,7 @@ extension UIImageView {
         self.image = anyImage
     }
     
-    func circle(image: UIImage, borderWidth: CGFloat, colorBorder: CGColor, x: Int, y:Int, width: Int, height: Int) -> UIImageView
+    func circle(image: UIImage, borderWidth: CGFloat, colorBorder: CGColor, x: CGFloat, y:CGFloat, width: CGFloat, height: CGFloat) -> UIImageView
     {
         let imageView = UIImageView(frame: CGRect(x: x, y: y, width: width, height: height))
         imageView.image = image

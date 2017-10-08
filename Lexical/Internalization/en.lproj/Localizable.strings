@@ -7,11 +7,30 @@
 */
 
 ACCOUNT = "Account";
+ACTION_CANCEL = "Cancel";
+BACK = "Back";
+BY_THE_WAY = "By the way";
+CAMERA_NOT_AVAILABLE = "Camera not available.";
+DESCRIPTION = "Description";
+DEVELOPED_BY = "Developed by Sanchis Floriane";
+EVALUATION = "Evaluate our application";
+HOME = "Home";
+LICENSE = "License";
+MESSAGE_IMPORT_PHOTO_SOURCE = "Choose a source";
+NAME_APPLICATION = "Name of the application";
+NAME = "Name";
+NEW_LIST = "New list";
+NEW_SUBTHEME = "New subtheme";
+NEW_THEME = "New theme";
+NEW_WORD = "New word";
+PAGE_FACEBOOK = "Our page facebook";
+PARAMETERS = "Parameters";
+PRIVACY_POLICY = "Privacy Policy";
+PURCHASE = "Purchase";
 STATISTICS = "Statistics";
 STORE = "Store";
-PURCHASE = "Purchase";
-PARAMETERS = "Parameters";
-EVALUATION = "Evaluate our application";
-PAGE_FACEBOOK = "Our page facebook";
-BY_THE_WAY = "By the way";
-
+TITLE_IMPORT_PHOTO_FROM_CAMERA = "Camera";
+TITLE_IMPORT_PHOTO_FROM_PHOTO_LIBRARY = "Photo library";
+TITLE_IMPORT_PHOTO_SOURCE = "Photo source";
+TO_LEARN = "To learn";
+TRADUCTION = "Traduction";

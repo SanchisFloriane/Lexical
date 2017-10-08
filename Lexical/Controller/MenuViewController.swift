@@ -55,36 +55,41 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    //Detection of section selected
+    //Detection of section menu selected
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let revealViewController:SWRevealViewController = self.revealViewController()
         
         let cell:MenuTableViewCell = tableView.cellForRow(at: indexPath) as! MenuTableViewCell
         
-        if cell.lblMenuName.text == "Home"
+        let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        var desController : UIViewController?
+        
+        if cell.lblMenuName.text == NSLocalizedString("HOME", comment: "")
         {
-            let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            
-            let desController = mainStoryboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-            
-            let newFrontViewController = UINavigationController.init(rootViewController:desController)
+            desController = mainStoryboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+        }
+        else if cell.lblMenuName.text == NSLocalizedString("BY_THE_WAY", comment: "")
+        {
+            desController = mainStoryboard.instantiateViewController(withIdentifier: "ByTheWayViewController") as! ByTheWayViewController
+        }
+        else if cell.lblMenuName.text == NSLocalizedString("ACCOUNT", comment: "")
+        {
+            desController = mainStoryboard.instantiateViewController(withIdentifier: "AddWordViewController") as! AddWordViewController
+        }
+        
+        if desController != nil
+        {
+            let newFrontViewController = UINavigationController.init(rootViewController:desController!)
             revealViewController.pushFrontViewController(newFrontViewController, animated: true)
         }
-      /*  else if cell.lblMenuName.text == "Nom"
-        {
-            let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            
-            let desController = mainStoryboard.instantiateViewController(withIdentifier: "AddListViewController") as! AddListViewController
-            
-            let newFrontViewController = UINavigationController.init(rootViewController:desController)
-            revealViewController.pushFrontViewController(newFrontViewController, animated: true)
-        }*/
     }
     
     func getNameSectionMenu() -> [String]
     {
-        return [NSLocalizedString("ACCOUNT",comment:""),
+        return [NSLocalizedString("HOME",comment:""),
+                NSLocalizedString("ACCOUNT",comment:""),
                 NSLocalizedString("STATISTICS",comment:""),
                 NSLocalizedString("STORE",comment:""),
                 NSLocalizedString("PURCHASE",comment:""),
@@ -96,7 +101,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func getImgIconeMenu() -> [UIImage]
     {
-        return [UIImage(named: "home")!,UIImage(named: "message")!,UIImage(named: "map")!,UIImage(named: "setting")!,UIImage(named: "home")!,UIImage(named: "home")!,UIImage(named: "home")!,UIImage(named: "home")!]
+        return [UIImage(named: "home")!, UIImage(named: "home")!,UIImage(named: "message")!,UIImage(named: "map")!,UIImage(named: "setting")!,UIImage(named: "home")!,UIImage(named: "home")!,UIImage(named: "home")!,UIImage(named: "home")!]
     }
     
 }

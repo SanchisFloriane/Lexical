@@ -1,24 +1,26 @@
 //
-//  MessageViewController.swift
+//  AddWordViewController.swift
 //  Lexical
 //
-//  Created by Floriane Sanchis on 30/09/2017.
+//  Created by Floriane Sanchis on 08/10/2017.
 //  Copyright © 2017 Floriane Sanchis. All rights reserved.
 //
 
 import UIKit
 import DLRadioButton
 
-class AddListViewController: UIViewController, iCarouselDelegate, iCarouselDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class AddWordViewController: UIViewController, iCarouselDelegate, iCarouselDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate
+{
     
-    @IBOutlet weak var lblName: UILabel!
-    @IBOutlet weak var lblDescription: UILabel!
-    @IBOutlet weak var btnBackToHome: UIBarButtonItem!
-    @IBOutlet weak var btnAddList: UIBarButtonItem!
-    @IBOutlet weak var btnNewList: DLRadioButton!
-    @IBOutlet weak var txtDescriptionList: UITextView!
-    @IBOutlet weak var txtNameList: UITextField!
-    @IBOutlet var carouselView: iCarousel!
+    @IBOutlet weak var lblNameWord: UILabel!
+    @IBOutlet weak var lblTraduction: UILabel!
+    @IBOutlet weak var btnBack: UIBarButtonItem!
+    @IBOutlet weak var btnAddWord: UIBarButtonItem!
+    @IBOutlet weak var btnNewWord: DLRadioButton!
+    @IBOutlet weak var btnToLearn: DLRadioButton!
+    @IBOutlet weak var txtNameWord: UITextField!
+    @IBOutlet weak var txtTraduction: UITextField!
+    @IBOutlet weak var carouselView: iCarousel!
     @IBOutlet weak var btnImportImage: UIButton!
     
     var indexLastSubViewCarousel : Int?
@@ -28,18 +30,18 @@ class AddListViewController: UIViewController, iCarouselDelegate, iCarouselDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        btnNewList.isMultipleSelectionEnabled = true
-        btnNewList.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
+        btnNewWord.isMultipleSelectionEnabled = true
+        btnNewWord.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
+        btnToLearn.isMultipleSelectionEnabled = true
+        btnToLearn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
         
-        txtDescriptionList.layer.borderColor = UIColor.black.cgColor
-        txtDescriptionList.layer.borderWidth = 1
-        
-        lblName.text = NSLocalizedString("NAME", comment: "")
-        lblDescription.text = NSLocalizedString("DESCRIPTION", comment: "")
-        btnBackToHome.title = NSLocalizedString("BACK", comment :"")
+        lblNameWord.text = NSLocalizedString("NAME", comment: "")
+        lblTraduction.text = NSLocalizedString("TRADUCTION", comment: "")
+        btnBack.title = NSLocalizedString("BACK", comment :"")
         carouselView.type = .cylinder
         
-        btnNewList.setTitle(NSLocalizedString("NEW_LIST", comment: ""), for: UIControlState.normal)
+        btnNewWord.setTitle(NSLocalizedString("NEW_WORD", comment: ""), for: UIControlState.normal)
+        btnToLearn.setTitle(NSLocalizedString("TO_LEARN", comment: ""), for: UIControlState.normal)
     }
     
     override func awakeFromNib() {
@@ -51,8 +53,12 @@ class AddListViewController: UIViewController, iCarouselDelegate, iCarouselDataS
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func isNewList(_ sender: DLRadioButton){
+    @IBAction func isNewWord(_ sender: DLRadioButton){
         print("\(String(sender.isSelected))") // affiche true ou false
+    }
+    
+    @IBAction func isToLearn(_ sender: DLRadioButton){
+        print("\(String(sender.isSelected))")
     }
     
     //Number of image in the carousel
@@ -155,7 +161,6 @@ class AddListViewController: UIViewController, iCarouselDelegate, iCarouselDataS
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
-    
     
     /*
      // MARK: - Navigation

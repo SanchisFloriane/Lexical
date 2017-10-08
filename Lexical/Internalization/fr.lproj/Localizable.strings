@@ -7,10 +7,30 @@
 */
 
 ACCOUNT = "Compte";
+ACTION_CANCEL = "Annuler";
+BACK = "Retour";
+BY_THE_WAY = "À propos";
+CAMERA_NOT_AVAILABLE = "Camera non disponible.";
+DESCRIPTION = "Description";
+DEVELOPED_BY = "Développée par Sanchis Floriane";
+EVALUATION = "Évaluer notre application";
+HOME = "Accueil";
+LICENSE = "Licence d'utilisation";
+MESSAGE_IMPORT_PHOTO_SOURCE = "Choisissez une source";
+NAME = "Nom";
+NEW_LIST = "Nouvelle liste";
+NEW_SUBTHEME = "Nouveau sous-thème";
+NEW_THEME = "Nouveau thème";
+NEW_WORD = "Nouveau mot";
+NAME_APPLICATION = "Nom de l'application";
+PAGE_FACEBOOK = "Notre page facebook";
+PARAMETERS = "Paramètres";
+PRIVACY_POLICY = "Politique de confidentialité";
+PURCHASE = "Achats";
 STATISTICS = "Statistiques";
 STORE = "Magasin";
-PURCHASE = "Achats";
-PARAMETERS = "Parametres";
-EVALUATION = "Évaluer notre application";
-PAGE_FACEBOOK = "Notre page facebook";
-BY_THE_WAY = "À propos";
+TITLE_IMPORT_PHOTO_FROM_CAMERA = "Camera";
+TITLE_IMPORT_PHOTO_FROM_PHOTO_LIBRARY = "Galerie de photos";
+TITLE_IMPORT_PHOTO_SOURCE = "Source de photo";
+TO_LEARN = "À apprendre";
+TRADUCTION = "Traduction";

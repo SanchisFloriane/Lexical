@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		39FBD85475B5C73C4437DA57 /* Pods_Lexical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56BC7653B8608D9B0373729F /* Pods_Lexical.framework */; };
+		F40D568D1F88B5F70020CC54 /* ByTheWayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40D568C1F88B5F70020CC54 /* ByTheWayViewController.swift */; };
 		F42C30201F7EF4A9005E8E27 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C301F1F7EF4A9005E8E27 /* MenuTableViewCell.swift */; };
 		F42C30281F7F0BC6005E8E27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F42C302A1F7F0BC6005E8E27 /* Localizable.strings */; };
 		F46AC67A1F7F7AD800C7B3CB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F46AC6791F7F7AD800C7B3CB /* SWRevealViewController.m */; };
 		F4790A101F80043F008218EB /* Lexical.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4790A0E1F80043F008218EB /* Lexical.xcdatamodeld */; };
+		F4933BCD1F88F0DE00B9FD37 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4933BCC1F88F0DE00B9FD37 /* UIScrollViewExtension.swift */; };
+		F499589D1F892D69000C6CCD /* AddThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499589C1F892D69000C6CCD /* AddThemeViewController.swift */; };
 		F49A0F931F7EE230009EAF4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49A0F921F7EE230009EAF4D /* AppDelegate.swift */; };
 		F49A0F9D1F7EE230009EAF4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49A0F9C1F7EE230009EAF4D /* Assets.xcassets */; };
 		F49A0FA01F7EE230009EAF4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49A0F9E1F7EE230009EAF4D /* LaunchScreen.storyboard */; };
@@ -20,6 +23,8 @@
 		F4A6BBD91F7F9AB500CF9554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F46AC67C1F7F8F9700C7B3CB /* Main.storyboard */; };
 		F4A6BBE71F7FA1EB00CF9554 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4A6BBE61F7FA1EA00CF9554 /* Default-568h@2x.png */; };
 		F4A6BBE81F7FA25100CF9554 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4A6BBE21F7FA0FA00CF9554 /* Info.plist */; };
+		F4D7FA281F8A1D8B0022086F /* AddSubThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7FA271F8A1D8B0022086F /* AddSubThemeViewController.swift */; };
+		F4D7FA2A1F8A256A0022086F /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7FA291F8A256A0022086F /* AddWordViewController.swift */; };
 		F4F02B171F80F5C2005DC869 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F02B161F80F5C2005DC869 /* UIImageExtension.swift */; };
 		F4F2863A1F7FE3360008F2EE /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F286361F7FE3350008F2EE /* AddListViewController.swift */; };
 		F4F2863B1F7FE3360008F2EE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F286371F7FE3350008F2EE /* MenuViewController.swift */; };
@@ -31,6 +36,7 @@
 		56BC7653B8608D9B0373729F /* Pods_Lexical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lexical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA0335458B20888E42D1F73 /* Pods-Lexical.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lexical.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lexical/Pods-Lexical.release.xcconfig"; sourceTree = "<group>"; };
 		C81023CC5E3A59F7B4EEB912 /* Pods-Lexical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lexical.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lexical/Pods-Lexical.debug.xcconfig"; sourceTree = "<group>"; };
+		F40D568C1F88B5F70020CC54 /* ByTheWayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByTheWayViewController.swift; sourceTree = "<group>"; };
 		F42C301F1F7EF4A9005E8E27 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		F42C30291F7F0BC6005E8E27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F46AC6781F7F77E900C7B3CB /* Lexical-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lexical-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -38,6 +44,8 @@
 		F46AC67D1F7F8F9700C7B3CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4790A0F1F80043F008218EB /* Lexical.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lexical.xcdatamodel; sourceTree = "<group>"; };
 		F4790A141F800F61008218EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F4933BCC1F88F0DE00B9FD37 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		F499589C1F892D69000C6CCD /* AddThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThemeViewController.swift; sourceTree = "<group>"; };
 		F49A0F8F1F7EE230009EAF4D /* Lexical.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lexical.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49A0F921F7EE230009EAF4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F49A0F9C1F7EE230009EAF4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,6 +58,8 @@
 		F4A6BBE11F7FA0FA00CF9554 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = fr; path = fr.lproj/Info.plist; sourceTree = "<group>"; };
 		F4A6BBE31F7FA10800CF9554 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
 		F4A6BBE61F7FA1EA00CF9554 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F4D7FA271F8A1D8B0022086F /* AddSubThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubThemeViewController.swift; sourceTree = "<group>"; };
+		F4D7FA291F8A256A0022086F /* AddWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordViewController.swift; sourceTree = "<group>"; };
 		F4F02B161F80F5C2005DC869 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		F4F286361F7FE3350008F2EE /* AddListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
 		F4F286371F7FE3350008F2EE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +180,10 @@
 				F4F286361F7FE3350008F2EE /* AddListViewController.swift */,
 				F4F286391F7FE3350008F2EE /* PresentationViewController.swift */,
 				F4F286381F7FE3350008F2EE /* HomeViewController.swift */,
+				F40D568C1F88B5F70020CC54 /* ByTheWayViewController.swift */,
+				F499589C1F892D69000C6CCD /* AddThemeViewController.swift */,
+				F4D7FA271F8A1D8B0022086F /* AddSubThemeViewController.swift */,
+				F4D7FA291F8A256A0022086F /* AddWordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				F4F02B161F80F5C2005DC869 /* UIImageExtension.swift */,
+				F4933BCC1F88F0DE00B9FD37 /* UIScrollViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -324,15 +339,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4F2863B1F7FE3360008F2EE /* MenuViewController.swift in Sources */,
+				F4D7FA281F8A1D8B0022086F /* AddSubThemeViewController.swift in Sources */,
 				F4F2863A1F7FE3360008F2EE /* AddListViewController.swift in Sources */,
 				F4F2863D1F7FE3360008F2EE /* PresentationViewController.swift in Sources */,
 				F4F2863C1F7FE3360008F2EE /* HomeViewController.swift in Sources */,
+				F4D7FA2A1F8A256A0022086F /* AddWordViewController.swift in Sources */,
 				F42C30201F7EF4A9005E8E27 /* MenuTableViewCell.swift in Sources */,
 				F4F02B171F80F5C2005DC869 /* UIImageExtension.swift in Sources */,
 				F49A0F931F7EE230009EAF4D /* AppDelegate.swift in Sources */,
+				F40D568D1F88B5F70020CC54 /* ByTheWayViewController.swift in Sources */,
 				F49AC38D1F86B04B00A0AC38 /* iCarousel.m in Sources */,
 				F4790A101F80043F008218EB /* Lexical.xcdatamodeld in Sources */,
 				F46AC67A1F7F7AD800C7B3CB /* SWRevealViewController.m in Sources */,
+				F4933BCD1F88F0DE00B9FD37 /* UIScrollViewExtension.swift in Sources */,
+				F499589D1F892D69000C6CCD /* AddThemeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
