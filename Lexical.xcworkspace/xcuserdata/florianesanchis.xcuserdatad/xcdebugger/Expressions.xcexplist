@@ -3,21 +3,21 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "AddListViewController.carouselDidEndScrollingAnimation(_:):AddListViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "carousel.currentItemView">
-            </PersistentString>
-            <PersistentString
-               value = "btn.currentImage">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "AddListViewController.collectionView(_:didSelectItemAt:):AddListViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "cell.imgCarousel.image">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AddListViewController.collectionView(_:cellForItemAt:):AddListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.imgCarousel.image">
+            </PersistentString>
+            <PersistentString
+               value = "cell.imgCarousel.image.getFileName()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -53,13 +53,32 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "AddListViewController.collectionView(_:cellForItemAt:):AddListViewController.swift">
+         contextName = "DisplaySpecificListViewController.viewDidLoad():DisplaySpecificListViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "cell.imgCarousel.image">
+               value = "navigationBar">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SearchTableViewController.searchBarCancelButtonClicked(_:):SearchTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "navigationController">
             </PersistentString>
             <PersistentString
-               value = "cell.imgCarousel.image.getFileName()">
+               value = "revealViewController.navigationController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AddListViewController.carouselDidEndScrollingAnimation(_:):AddListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "carousel.currentItemView">
+            </PersistentString>
+            <PersistentString
+               value = "btn.currentImage">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -27,9 +27,10 @@ class HomeViewController: UIViewController {
         //Utilisation du menu
         btnMenu.target = revealViewController()
         btnMenu.action = #selector(SWRevealViewController.revealToggle(_:))
-             screenHeight = scrollView.frame.size.height
-        //Display the list of user
-        displayList()
+        screenHeight = scrollView.frame.size.height
+        
+        //Display lists of user
+        displayLists()
         
         //Resize the scrollView
         scrollView.resizeScrollViewContentSize()
@@ -41,7 +42,7 @@ class HomeViewController: UIViewController {
     }
     
     //Display lists of user
-    func displayList(){
+    func displayLists(){
         
         //Get lists of the user
         let listsUser = [UIImage(named: "france.png"),UIImage(named: "germany.png"),UIImage(named: "china.png"),UIImage(named: "united-kingdom.png"),UIImage(named: "switzerland.png"),UIImage(named: "canada.png"),UIImage(named: "france.png"),UIImage(named: "germany.png"),UIImage(named: "france.png"),UIImage(named: "germany.png")]
@@ -63,7 +64,7 @@ class HomeViewController: UIViewController {
         
         var xPosition : CGFloat = 0
         var yPosition : CGFloat = 0
-        
+    
         for image in listsUser
         {
             if addLine(line: line, column : column) && !addColumn(column : column)
@@ -86,7 +87,15 @@ class HomeViewController: UIViewController {
             }
             
             var imageView = UIImageView()
+            
             imageView = imageView.circle(image: image!, borderWidth: 2, colorBorder: UIColor.white.cgColor, x: xPosition, y: yPosition, width: iconListWidth, height: iconListHeight)
+            
+            //Addition of the touch up inside action
+            imageView.isUserInteractionEnabled = true
+            let recognizer = ObjectUITapGestureRecognizer(target: self, action: #selector(HomeViewController.displaySpecificList(_:)))
+            recognizer.ID = 5
+            imageView.addGestureRecognizer(recognizer)
+            
             scrollView.addSubview(imageView)
         }
         /**************************/
@@ -112,6 +121,24 @@ class HomeViewController: UIViewController {
         return false
     }
 
+    //Display a specific list
+    @objc func displaySpecificList(_ recognizer: ObjectUITapGestureRecognizer)
+    {
+        print("ID : \(recognizer.ID)")
+        
+        let revealViewController:SWRevealViewController = self.revealViewController()
+        
+        //Call the mainStoryBoard
+        let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
+        
+        //Creation of UIViewController
+        let desController = mainStoryboard.instantiateViewController(withIdentifier: "DisplaySpecificListViewController") as! DisplaySpecificListViewController
+      
+       //Change of UIViewController
+        let newFrontViewController = UINavigationController.init(rootViewController:desController)
+        revealViewController.pushFrontViewController(newFrontViewController, animated: true)
+    }
+    
     // Pass to the homeController
     func goToAddListViewController (){
         
