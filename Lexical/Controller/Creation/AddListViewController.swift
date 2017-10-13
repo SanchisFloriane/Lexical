@@ -46,6 +46,7 @@ class AddListViewController: UIViewController, iCarouselDelegate, iCarouselDataS
         super.awakeFromNib()
         
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -85,8 +86,7 @@ class AddListViewController: UIViewController, iCarouselDelegate, iCarouselDataS
         tempView.addSubview(button)
         return tempView
     }
-    
-    
+        
     //Get the UIImage selected
     func carouselDidEndScrollingAnimation(_ carousel: iCarousel) {
         if indexLastSubViewCarousel != nil{

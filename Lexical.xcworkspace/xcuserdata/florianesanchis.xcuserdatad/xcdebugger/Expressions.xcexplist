@@ -3,6 +3,42 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "DisplaySpecificListViewController.numberOfItems(in:):DisplaySpecificListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "carouselTheme">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LexicalICarousel.numberOfItems(in:):LexicalICarousel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "listImage.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DesignDisplaySpecificListUIView.drawCarouselTheme():DesignDisplaySpecificListUIView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "getSpaceBetweenRect()">
+            </PersistentString>
+            <PersistentString
+               value = "getMargeCarousel()">
+            </PersistentString>
+            <PersistentString
+               value = "screenHeight">
+            </PersistentString>
+            <PersistentString
+               value = "rectTheme.origin.y">
+            </PersistentString>
+            <PersistentString
+               value = "getPositionBottomRectTheme()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "AddListViewController.collectionView(_:didSelectItemAt:):AddListViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -11,13 +47,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "AddListViewController.collectionView(_:cellForItemAt:):AddListViewController.swift">
+         contextName = "DesignDisplaySpecificListUIView.getPositionRectTheme():DesignDisplaySpecificListUIView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "cell.imgCarousel.image">
+               value = "heightRect">
             </PersistentString>
             <PersistentString
-               value = "cell.imgCarousel.image.getFileName()">
+               value = "Double(rectTheme.origin.y)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -32,6 +68,17 @@
             </PersistentString>
             <PersistentString
                value = "carouselView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "AddListViewController.carouselDidEndScrollingAnimation(_:):AddListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "carousel.currentItemView">
+            </PersistentString>
+            <PersistentString
+               value = "btn.currentImage">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -72,13 +119,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "AddListViewController.carouselDidEndScrollingAnimation(_:):AddListViewController.swift">
+         contextName = "AddListViewController.collectionView(_:cellForItemAt:):AddListViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "carousel.currentItemView">
+               value = "cell.imgCarousel.image">
             </PersistentString>
             <PersistentString
-               value = "btn.currentImage">
+               value = "cell.imgCarousel.image.getFileName()">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -125,13 +125,12 @@
         <scene sceneID="LwK-c2-WWt">
             <objects>
                 <viewController storyboardIdentifier="DisplaySpecificListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lZe-mV-IXe" userLabel="DisplaySpecificList" customClass="DisplaySpecificListViewController" customModule="Lexical" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="olf-Rg-cdL">
+                    <view key="view" contentMode="scaleToFill" id="olf-Rg-cdL" customClass="DesignDisplaySpecificListUIView" customModule="Lexical" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nQc-aJ-T0y">
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQc-aJ-T0y">
                                 <rect key="frame" x="0.0" y="687" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <items>
                                     <tabBarItem image="eye" id="7S9-B1-Ncb"/>
@@ -139,17 +138,107 @@
                                     <tabBarItem image="update" id="FI7-xi-iSv"/>
                                 </items>
                             </tabBar>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search a word  ..." translatesAutoresizingMaskIntoConstraints="NO" id="P5A-FQ-28D">
+                            <searchBar contentMode="redraw" placeholder="Search a word  ..." translatesAutoresizingMaskIntoConstraints="NO" id="P5A-FQ-28D">
                                 <rect key="frame" x="65" y="20" width="285" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="pPL-r0-2nw"/>
+                                </constraints>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="lZe-mV-IXe" id="kve-Tc-D3p"/>
                                 </connections>
                             </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sous-thème" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPc-Zk-coH">
+                                <rect key="frame" x="160" y="280" width="94" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercice" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6e-uI-bNq">
+                                <rect key="frame" x="174.66666666666666" y="483" width="64.666666666666686" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thème" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swB-cc-nPd">
+                                <rect key="frame" x="181" y="76" width="53.333333333333343" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7vg-0x-yWZ" customClass="LexicalICarousel" customModule="Lexical" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="150" width="414" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="08f-at-w32"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="lZe-mV-IXe" id="oab-2g-6di"/>
+                                    <outlet property="delegate" destination="lZe-mV-IXe" id="66Q-74-eIT"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qR-Rf-X3Z" customClass="LexicalICarousel" customModule="Lexical" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="354" width="414" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="53v-ld-ZSH"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="lZe-mV-IXe" id="oOF-3y-QZd"/>
+                                    <outlet property="delegate" destination="lZe-mV-IXe" id="hZ3-FH-bKO"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZV-Se-vlg" customClass="LexicalICarousel" customModule="Lexical" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="557" width="414" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="evE-2N-Joi"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="lZe-mV-IXe" id="S42-M7-E1Y"/>
+                                    <outlet property="delegate" destination="lZe-mV-IXe" id="UvF-7V-x9v"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R6e-uI-bNq" firstAttribute="centerX" secondItem="olf-Rg-cdL" secondAttribute="centerX" id="04t-xz-ABo"/>
+                            <constraint firstItem="4qR-Rf-X3Z" firstAttribute="trailing" secondItem="ULX-4E-GYt" secondAttribute="trailing" id="3hM-gQ-6z6"/>
+                            <constraint firstItem="P5A-FQ-28D" firstAttribute="centerX" secondItem="olf-Rg-cdL" secondAttribute="centerX" id="5dJ-ft-Jf1"/>
+                            <constraint firstItem="P5A-FQ-28D" firstAttribute="top" secondItem="ULX-4E-GYt" secondAttribute="top" id="5le-YP-sAZ"/>
+                            <constraint firstItem="4qR-Rf-X3Z" firstAttribute="centerX" secondItem="olf-Rg-cdL" secondAttribute="centerX" id="8Kw-JM-UBd"/>
+                            <constraint firstItem="nQc-aJ-T0y" firstAttribute="leading" secondItem="olf-Rg-cdL" secondAttribute="leading" id="CZ5-Pq-fBv"/>
+                            <constraint firstItem="4qR-Rf-X3Z" firstAttribute="top" secondItem="pPc-Zk-coH" secondAttribute="bottom" constant="54" id="DTV-WJ-tgy"/>
+                            <constraint firstItem="xZV-Se-vlg" firstAttribute="trailing" secondItem="ULX-4E-GYt" secondAttribute="trailing" id="Eoi-E5-ZxT"/>
+                            <constraint firstItem="pPc-Zk-coH" firstAttribute="centerX" secondItem="olf-Rg-cdL" secondAttribute="centerX" id="JRk-LU-Xcd"/>
+                            <constraint firstItem="R6e-uI-bNq" firstAttribute="top" secondItem="4qR-Rf-X3Z" secondAttribute="bottom" constant="54" id="Lq7-Bm-3Z1"/>
+                            <constraint firstItem="7vg-0x-yWZ" firstAttribute="top" secondItem="swB-cc-nPd" secondAttribute="bottom" constant="54" id="OOq-wq-hww"/>
+                            <constraint firstItem="xZV-Se-vlg" firstAttribute="top" secondItem="R6e-uI-bNq" secondAttribute="bottom" constant="54" id="PeB-Xw-10V"/>
+                            <constraint firstItem="7vg-0x-yWZ" firstAttribute="leading" secondItem="ULX-4E-GYt" secondAttribute="leading" id="XTQ-lU-DS4"/>
+                            <constraint firstItem="nQc-aJ-T0y" firstAttribute="top" secondItem="xZV-Se-vlg" secondAttribute="bottom" constant="55" id="YBS-tb-Dds"/>
+                            <constraint firstItem="pPc-Zk-coH" firstAttribute="top" secondItem="7vg-0x-yWZ" secondAttribute="bottom" constant="55" id="bXZ-dv-dvE"/>
+                            <constraint firstItem="xZV-Se-vlg" firstAttribute="leading" secondItem="ULX-4E-GYt" secondAttribute="leading" id="gKa-In-jwk"/>
+                            <constraint firstItem="7vg-0x-yWZ" firstAttribute="centerX" secondItem="olf-Rg-cdL" secondAttribute="centerX" id="gb4-Du-3JD"/>
+                            <constraint firstItem="P5A-FQ-28D" firstAttribute="leading" secondItem="ULX-4E-GYt" secondAttribute="leading" constant="65" id="hTM-5R-mGZ"/>
+                            <constraint firstItem="swB-cc-nPd" firstAttribute="centerX" secondItem="olf-Rg-cdL" secondAttribute="centerX" id="heN-uD-omZ"/>
+                            <constraint firstItem="7vg-0x-yWZ" firstAttribute="trailing" secondItem="ULX-4E-GYt" secondAttribute="trailing" id="rmz-pZ-NsA"/>
+                            <constraint firstItem="swB-cc-nPd" firstAttribute="top" secondItem="P5A-FQ-28D" secondAttribute="bottom" id="sxk-5K-n8Z"/>
+                            <constraint firstAttribute="trailing" secondItem="nQc-aJ-T0y" secondAttribute="trailing" id="tUf-k2-JeR"/>
+                            <constraint firstItem="4qR-Rf-X3Z" firstAttribute="leading" secondItem="ULX-4E-GYt" secondAttribute="leading" id="vJk-Af-5IJ"/>
+                            <constraint firstItem="xZV-Se-vlg" firstAttribute="centerX" secondItem="olf-Rg-cdL" secondAttribute="centerX" id="w62-A3-yYj"/>
+                            <constraint firstItem="nQc-aJ-T0y" firstAttribute="leading" secondItem="olf-Rg-cdL" secondAttribute="leading" id="wPS-UF-jua"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ULX-4E-GYt"/>
+                        <connections>
+                            <outlet property="carouselExercice" destination="xZV-Se-vlg" id="0kt-RN-QU1"/>
+                            <outlet property="carouselSubTheme" destination="4qR-Rf-X3Z" id="4ih-j9-Hns"/>
+                            <outlet property="carouselTheme" destination="7vg-0x-yWZ" id="3sD-GG-9Z7"/>
+                            <outlet property="lblExercice" destination="R6e-uI-bNq" id="u9Z-fg-dcB"/>
+                            <outlet property="lblSubTheme" destination="pPc-Zk-coH" id="CMn-9K-8f7"/>
+                            <outlet property="lblTheme" destination="swB-cc-nPd" id="eHE-15-h6V"/>
+                            <outlet property="searchBar" destination="P5A-FQ-28D" id="rTM-pZ-fbJ"/>
+                            <outlet property="tabBar" destination="nQc-aJ-T0y" id="Clg-e5-YOv"/>
+                        </connections>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="3dR-Yw-f1e">
@@ -161,13 +250,16 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="btnMenu" destination="jbH-Hj-CJJ" id="ETq-1o-MRK"/>
+                        <outlet property="carouselExercice" destination="xZV-Se-vlg" id="ezh-lm-3c8"/>
+                        <outlet property="carouselSubTheme" destination="4qR-Rf-X3Z" id="3fR-Sh-VNm"/>
+                        <outlet property="carouselTheme" destination="7vg-0x-yWZ" id="Ej5-op-HPc"/>
                         <outlet property="navigationBar" destination="3dR-Yw-f1e" id="M8Z-dN-tT9"/>
                         <outlet property="searchBar" destination="P5A-FQ-28D" id="N0e-ns-UnV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fNN-dl-1rc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586.9565217391305" y="1273.3695652173915"/>
+            <point key="canvasLocation" x="1895.6521739130437" y="1332.8804347826087"/>
         </scene>
         <!--Search Table View Controller-->
         <scene sceneID="aSl-WI-gRj">
@@ -244,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T1m-5f-LaY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1591.304347826087" y="1951.6304347826087"/>
+            <point key="canvasLocation" x="1896" y="2058"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="Rzi-eZ-t6s">

@@ -11,8 +11,12 @@
 		F40D568D1F88B5F70020CC54 /* ByTheWayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40D568C1F88B5F70020CC54 /* ByTheWayViewController.swift */; };
 		F42C30201F7EF4A9005E8E27 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42C301F1F7EF4A9005E8E27 /* MenuTableViewCell.swift */; };
 		F42C30281F7F0BC6005E8E27 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F42C302A1F7F0BC6005E8E27 /* Localizable.strings */; };
+		F441E98E1F9094AF005E88B6 /* CGRectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F441E98D1F9094AF005E88B6 /* CGRectExtension.swift */; };
 		F46AC67A1F7F7AD800C7B3CB /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F46AC6791F7F7AD800C7B3CB /* SWRevealViewController.m */; };
 		F4790A101F80043F008218EB /* Lexical.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4790A0E1F80043F008218EB /* Lexical.xcdatamodeld */; };
+		F47F34EB1F90D7680012D1D6 /* LexicalICarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47F34EA1F90D7680012D1D6 /* LexicalICarousel.swift */; };
+		F4800EC41F90B76700BA24D9 /* UISearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4800EC31F90B76700BA24D9 /* UISearchBarExtension.swift */; };
+		F4800EC61F90B8F300BA24D9 /* UITabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4800EC51F90B8F300BA24D9 /* UITabBarExtension.swift */; };
 		F483830E1F8A33540055C118 /* UpdateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483830D1F8A33540055C118 /* UpdateListViewController.swift */; };
 		F48383101F8A34A00055C118 /* UpdateThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F483830F1F8A34A00055C118 /* UpdateThemeViewController.swift */; };
 		F48383121F8A357F0055C118 /* UpdateSubThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48383111F8A357F0055C118 /* UpdateSubThemeViewController.swift */; };
@@ -32,6 +36,7 @@
 		F4A6BBE81F7FA25100CF9554 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4A6BBE21F7FA0FA00CF9554 /* Info.plist */; };
 		F4D7FA281F8A1D8B0022086F /* AddSubThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7FA271F8A1D8B0022086F /* AddSubThemeViewController.swift */; };
 		F4D7FA2A1F8A256A0022086F /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D7FA291F8A256A0022086F /* AddWordViewController.swift */; };
+		F4DB90531F8FDB390095949B /* DesignDisplaySpecificListUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DB90521F8FDB390095949B /* DesignDisplaySpecificListUIView.swift */; };
 		F4DC3B371F8D336F0067CE80 /* LexicalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DC3B361F8D336F0067CE80 /* LexicalTableViewCell.swift */; };
 		F4F02B171F80F5C2005DC869 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F02B161F80F5C2005DC869 /* UIImageExtension.swift */; };
 		F4F2863A1F7FE3360008F2EE /* AddListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F286361F7FE3350008F2EE /* AddListViewController.swift */; };
@@ -47,11 +52,15 @@
 		F40D568C1F88B5F70020CC54 /* ByTheWayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByTheWayViewController.swift; sourceTree = "<group>"; };
 		F42C301F1F7EF4A9005E8E27 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		F42C30291F7F0BC6005E8E27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F441E98D1F9094AF005E88B6 /* CGRectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectExtension.swift; sourceTree = "<group>"; };
 		F46AC6781F7F77E900C7B3CB /* Lexical-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lexical-Bridging-Header.h"; sourceTree = "<group>"; };
 		F46AC6791F7F7AD800C7B3CB /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		F46AC67D1F7F8F9700C7B3CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4790A0F1F80043F008218EB /* Lexical.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lexical.xcdatamodel; sourceTree = "<group>"; };
 		F4790A141F800F61008218EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F47F34EA1F90D7680012D1D6 /* LexicalICarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexicalICarousel.swift; sourceTree = "<group>"; };
+		F4800EC31F90B76700BA24D9 /* UISearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarExtension.swift; sourceTree = "<group>"; };
+		F4800EC51F90B8F300BA24D9 /* UITabBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarExtension.swift; sourceTree = "<group>"; };
 		F483830D1F8A33540055C118 /* UpdateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateListViewController.swift; sourceTree = "<group>"; };
 		F483830F1F8A34A00055C118 /* UpdateThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateThemeViewController.swift; sourceTree = "<group>"; };
 		F48383111F8A357F0055C118 /* UpdateSubThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateSubThemeViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +84,7 @@
 		F4A6BBE61F7FA1EA00CF9554 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F4D7FA271F8A1D8B0022086F /* AddSubThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubThemeViewController.swift; sourceTree = "<group>"; };
 		F4D7FA291F8A256A0022086F /* AddWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordViewController.swift; sourceTree = "<group>"; };
+		F4DB90521F8FDB390095949B /* DesignDisplaySpecificListUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignDisplaySpecificListUIView.swift; sourceTree = "<group>"; };
 		F4DC3B361F8D336F0067CE80 /* LexicalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LexicalTableViewCell.swift; sourceTree = "<group>"; };
 		F4F02B161F80F5C2005DC869 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		F4F286361F7FE3350008F2EE /* AddListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddListViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +133,14 @@
 			path = Internalization;
 			sourceTree = "<group>";
 		};
+		F441E98C1F909423005E88B6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F4F286381F7FE3350008F2EE /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		F48FD0071F8A6C49006AD5CC /* Recognizer */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				F4DC3B361F8D336F0067CE80 /* LexicalTableViewCell.swift */,
+				F47F34EA1F90D7680012D1D6 /* LexicalICarousel.swift */,
 			);
 			path = SubClassSwift;
 			sourceTree = "<group>";
@@ -216,8 +235,10 @@
 		F4A2F8721F7F73F90082254E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F4A08D861F8A50E9005CC09F /* Display */,
 				F4D7FA2B1F8A2FB00022086F /* Creation */,
+				F4DB904F1F8FD7020095949B /* Design */,
+				F4A08D861F8A50E9005CC09F /* Display */,
+				F441E98C1F909423005E88B6 /* Home */,
 				F4D7FA2D1F8A2FED0022086F /* Menu */,
 				F4D7FA2C1F8A2FDF0022086F /* Modification */,
 				F48FD0071F8A6C49006AD5CC /* Recognizer */,
@@ -261,7 +282,6 @@
 			children = (
 				F42C301F1F7EF4A9005E8E27 /* MenuTableViewCell.swift */,
 				F4F286371F7FE3350008F2EE /* MenuViewController.swift */,
-				F4F286381F7FE3350008F2EE /* HomeViewController.swift */,
 				F40D568C1F88B5F70020CC54 /* ByTheWayViewController.swift */,
 			);
 			path = Menu;
@@ -275,11 +295,22 @@
 			path = Start;
 			sourceTree = "<group>";
 		};
+		F4DB904F1F8FD7020095949B /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				F4DB90521F8FDB390095949B /* DesignDisplaySpecificListUIView.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
 		F4F02B151F80F5AF005DC869 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				F4F02B161F80F5C2005DC869 /* UIImageExtension.swift */,
 				F4933BCC1F88F0DE00B9FD37 /* UIScrollViewExtension.swift */,
+				F441E98D1F9094AF005E88B6 /* CGRectExtension.swift */,
+				F4800EC31F90B76700BA24D9 /* UISearchBarExtension.swift */,
+				F4800EC51F90B8F300BA24D9 /* UITabBarExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -420,23 +451,28 @@
 			files = (
 				F4F2863B1F7FE3360008F2EE /* MenuViewController.swift in Sources */,
 				F4D7FA281F8A1D8B0022086F /* AddSubThemeViewController.swift in Sources */,
+				F47F34EB1F90D7680012D1D6 /* LexicalICarousel.swift in Sources */,
 				F4F2863A1F7FE3360008F2EE /* AddListViewController.swift in Sources */,
 				F4F2863D1F7FE3360008F2EE /* PresentationViewController.swift in Sources */,
 				F4DC3B371F8D336F0067CE80 /* LexicalTableViewCell.swift in Sources */,
 				F4F2863C1F7FE3360008F2EE /* HomeViewController.swift in Sources */,
 				F48FD0091F8A6C87006AD5CC /* ObjectUITapGestureRecognizer.swift in Sources */,
 				F4D7FA2A1F8A256A0022086F /* AddWordViewController.swift in Sources */,
+				F4DB90531F8FDB390095949B /* DesignDisplaySpecificListUIView.swift in Sources */,
 				F48383141F8A358F0055C118 /* UpdateWordViewController.swift in Sources */,
 				F48383101F8A34A00055C118 /* UpdateThemeViewController.swift in Sources */,
 				F42C30201F7EF4A9005E8E27 /* MenuTableViewCell.swift in Sources */,
 				F4A08D881F8A50FA005CC09F /* DisplaySpecificListViewController.swift in Sources */,
 				F48383121F8A357F0055C118 /* UpdateSubThemeViewController.swift in Sources */,
 				F483830E1F8A33540055C118 /* UpdateListViewController.swift in Sources */,
+				F4800EC41F90B76700BA24D9 /* UISearchBarExtension.swift in Sources */,
 				F4F02B171F80F5C2005DC869 /* UIImageExtension.swift in Sources */,
+				F4800EC61F90B8F300BA24D9 /* UITabBarExtension.swift in Sources */,
 				F49A0F931F7EE230009EAF4D /* AppDelegate.swift in Sources */,
 				F40D568D1F88B5F70020CC54 /* ByTheWayViewController.swift in Sources */,
 				F49AC38D1F86B04B00A0AC38 /* iCarousel.m in Sources */,
 				F4790A101F80043F008218EB /* Lexical.xcdatamodeld in Sources */,
+				F441E98E1F9094AF005E88B6 /* CGRectExtension.swift in Sources */,
 				F46AC67A1F7F7AD800C7B3CB /* SWRevealViewController.m in Sources */,
 				F48FD00C1F8A6DC9006AD5CC /* SearchTableViewController.swift in Sources */,
 				F4933BCD1F88F0DE00B9FD37 /* UIScrollViewExtension.swift in Sources */,
