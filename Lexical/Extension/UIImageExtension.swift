@@ -33,10 +33,20 @@ extension UIImageView {
     {
         let imageView = UIImageView(frame: CGRect(x: x, y: y, width: width, height: height))
         imageView.image = image
-        imageView.layer.borderWidth=borderWidth //1.0
+        imageView.layer.borderWidth=borderWidth
         imageView.layer.masksToBounds = false
         imageView.layer.borderColor = colorBorder
         imageView.layer.cornerRadius = imageView.frame.size.height/2
+        imageView.clipsToBounds = true
+        
+        return imageView
+    }
+    
+    func toLearnTab(x: CGFloat, y:CGFloat, width: CGFloat, height: CGFloat) -> UIImageView
+    {
+        let imageView = UIImageView(frame: CGRect(x: x, y: y, width: width, height: height))
+        imageView.image = UIImage(named: "book.png")
+        imageView.layer.masksToBounds = false
         imageView.clipsToBounds = true
         
         return imageView

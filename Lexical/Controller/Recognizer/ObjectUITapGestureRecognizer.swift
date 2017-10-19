@@ -10,5 +10,9 @@ import UIKit
 
 class ObjectUITapGestureRecognizer: UITapGestureRecognizer {
 
-    var ID : Int = 0
+    var ID : Int?
+    var searchBar : UISearchBar?
+    var imgToLearn: UIImageView?
+    var imgToNew : UIImageView?
+    var barButton : UIBarButtonItem?
 }

@@ -1,5 +1,5 @@
 //
-//  DesignUIView.swift
+//  DesignDisplaySpecificListUIView.swift
 //  Lexical
 //
 //  Created by Floriane Sanchis on 12/10/2017.

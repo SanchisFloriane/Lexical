@@ -8,37 +8,41 @@
 
 import UIKit
 
-class SearchTableViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
+class SearchTableViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource, UINavigationBarDelegate{
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var btnMenu: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var navigationBar: UINavigationItem!
     
+    var keyboardDismissTapGesture : UIGestureRecognizer?
+    
     var wordOfList = ["france.png", "germany.png","china.png","united-kingdom.png","switzerland.png","canada.png"]
     var filteredWord = [String]()
     
     var isSearching = false
+    var cancelButton : UIButton!
     
+    // Do any additional setup after loading the view.
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Put the searchbar inside navigationBar
         navigationBar.titleView = searchBar
         
-        //Load the menu button
-        if revealViewController() != nil {
-        btnMenu.target = revealViewController()
-        btnMenu.action = #selector(SWRevealViewController.revealToggle(_:))
-        }
-        
+        btnMenu.target = self
         //Auto-focus
         searchBar.becomeFirstResponder()
         
         //Always enables the cancel button of the searchBar
-        let cancelButton = searchBar.value(forKeyPath: "cancelButton") as! UIButton        
+        cancelButton = searchBar.value(forKeyPath: "cancelButton") as! UIButton
         cancelButton.isEnabled = true
         cancelButton.tintColor = UIColor.black
+        
+        if revealViewController() != nil
+        {
+             hideKeyboardWhenTappedArround(searchBar: searchBar)
+        }
         
         //Filter when text is done
         searchBar.returnKeyType = UIReturnKeyType.done
@@ -65,7 +69,7 @@ class SearchTableViewController: UIViewController, UISearchBarDelegate, UITableV
     
     //When cancel button is clicked
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-     
+        
         //Call the mainStoryBoard
         let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
         
@@ -75,9 +79,10 @@ class SearchTableViewController: UIViewController, UISearchBarDelegate, UITableV
         //Return to DisplaySpecificListViewController
         navigationController?.pushViewController(desController, animated: false)
     }
-        
+    
     // Return the number of sections
-    func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int
+    {
         return 1
     }
     
@@ -92,14 +97,13 @@ class SearchTableViewController: UIViewController, UISearchBarDelegate, UITableV
     }
     
     //Return the name of list, theme sous theme etc related to what is seletectionned
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String?
+    {
         return "Name list"
     }
     
     //Display the table view
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        //let cell = UITableViewCell(style: .default, reuseIdentifier: "basic")
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "lexicalSearchTableViewCell", for: indexPath) as! LexicalSearchTableViewCell
         
@@ -114,9 +118,9 @@ class SearchTableViewController: UIViewController, UISearchBarDelegate, UITableV
             word = wordOfList[indexPath.row]
         }
         
-        cell.nameWord.text = word
-        cell.traductionWord.text = "Traduction word"
-        
+        cell.nameWord?.text = word
+        cell.traductionWord?.text = "Traduction word"
+        addRecognizerToLearn(imgToLearn: cell.imgToLearn!)
         return cell
     }
     
@@ -139,7 +143,27 @@ class SearchTableViewController: UIViewController, UISearchBarDelegate, UITableV
         
         //Remove focus of the searchBar
         searchBar.endEditing(true)
+        //Kept the cancel button enable
+        cancelButton.isEnabled = true
     }
+
+    //Open menu and hide the keyboard if it is active
+    @IBAction func openMenu()
+    {
+        searchBar.endEditing(true)
+        //Load the menu button
+        if revealViewController() != nil
+        {
+            revealViewController().revealToggle(animated: true)
+        }
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        
+        //Kept the cancel button enable
+        cancelButton.isEnabled = true
+    }
+
     /*
      // Override to support conditional editing of the table view.
      override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

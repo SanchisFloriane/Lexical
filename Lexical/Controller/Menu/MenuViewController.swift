@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var sectionMenu : Array = [String]()
@@ -16,7 +17,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var imgProfileMenu: UIImageView!
     @IBOutlet weak var lblPseudo: UILabel!
     
-    //Do any additional setup after loading the view
+    // Do any additional setup after loading the view.
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,13 +33,14 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         imgProfileMenu.clipsToBounds = true
         
         lblPseudo.text = "Futur pseudo ..."
-        
-    }
+         }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+   
     //Configure the number of section
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sectionMenu.count

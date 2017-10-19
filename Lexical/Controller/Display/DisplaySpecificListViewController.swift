@@ -8,9 +8,7 @@
 
 import UIKit
 
-class DisplaySpecificListViewController: UIViewController, UISearchBarDelegate, iCarouselDataSource, iCarouselDelegate {
-    
-    
+class DisplaySpecificListViewController: UIViewController, UISearchBarDelegate, iCarouselDataSource, iCarouselDelegate, UITabBarDelegate {
     
     @IBOutlet weak var btnMenu: UIBarButtonItem!
     @IBOutlet weak var navigationBar: UINavigationItem!
@@ -18,6 +16,8 @@ class DisplaySpecificListViewController: UIViewController, UISearchBarDelegate, 
     @IBOutlet weak var carouselTheme: LexicalICarousel!
     @IBOutlet weak var carouselSubTheme: LexicalICarousel!
     @IBOutlet weak var carouselExercice: LexicalICarousel!
+    @IBOutlet weak var btnPlay: UIBarButtonItem!
+    @IBOutlet weak var tabBar: UITabBar!
     
     var indexLastSubViewCarousel : Int?
     
@@ -43,6 +43,7 @@ class DisplaySpecificListViewController: UIViewController, UISearchBarDelegate, 
             btnMenu.target = revealViewController()
             btnMenu.action = #selector(SWRevealViewController.revealToggle(_:))
         }
+        
     }
     
     // Dispose of any resources that can be recreated.
@@ -67,7 +68,7 @@ class DisplaySpecificListViewController: UIViewController, UISearchBarDelegate, 
         
         let newFrontViewController = UINavigationController.init(rootViewController:desController)
         revealViewController.pushFrontViewController(newFrontViewController, animated: true)
-       
+        
         return true
     }
     
@@ -88,9 +89,9 @@ class DisplaySpecificListViewController: UIViewController, UISearchBarDelegate, 
     {
         carouselExercice.type = .linear
     }
-        
+    
     func numberOfItems(in carousel: iCarousel) -> Int {
-       
+        
         if carousel == carouselTheme
         {
             return carouselTheme.numberOfItems(in: carouselTheme, listImg: listImgCarousel)
@@ -107,7 +108,7 @@ class DisplaySpecificListViewController: UIViewController, UISearchBarDelegate, 
         return 0
     }
     
-     //Define options for carousel
+    //Define options for carousel
     func carousel(_ carousel: iCarousel, valueFor option: iCarouselOption, withDefault value: CGFloat) -> CGFloat
     {
         if carousel == carouselTheme
@@ -162,6 +163,32 @@ class DisplaySpecificListViewController: UIViewController, UISearchBarDelegate, 
         }
     }
     
-    
-       
+    // Pass to the homeController
+    func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        
+        //Call the mainStoryBoard
+        let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle: nil)
+        var desController : UIViewController?
+        if(item.tag == 1)
+        {
+            //Creation of DisplayWordListViewController
+            desController = mainStoryboard.instantiateViewController(withIdentifier: "DisplayWordListViewController") as! DisplayWordListViewController
+        }
+        else if (item.tag == 2)
+        {
+            //Creation of DisplayWordListViewController
+            desController = mainStoryboard.instantiateViewController(withIdentifier: "DisplayWordListViewController") as! DisplayWordListViewController
+        }
+        else if (item.tag == 3)
+        {
+            //Creation of DisplayWordListViewController
+            desController = mainStoryboard.instantiateViewController(withIdentifier: "DisplayWordListViewController") as! DisplayWordListViewController
+        }
+        //Change of UIViewController
+        if desController != nil{
+            //Return to DisplaySpecificListViewController
+            navigationController?.pushViewController(desController!, animated: false)
+        }
+    }
+        
 }

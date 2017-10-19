@@ -10,8 +10,10 @@ import UIKit
 
 class LexicalSearchTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var nameWord: UILabel!
-    @IBOutlet weak var traductionWord: UILabel!
+    @IBOutlet weak var nameWord: UILabel?
+    @IBOutlet weak var traductionWord: UILabel?
+    @IBOutlet weak var imgToLearn: UIImageView?
+    @IBOutlet weak var imgToNew: UIImageView?
     
     override func awakeFromNib() {
         super.awakeFromNib()

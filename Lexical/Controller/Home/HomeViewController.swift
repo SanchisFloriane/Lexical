@@ -124,7 +124,7 @@ class HomeViewController: UIViewController {
     //Display a specific list
     @objc func displaySpecificList(_ recognizer: ObjectUITapGestureRecognizer)
     {
-        print("ID : \(recognizer.ID)")
+        print("ID : \(String(describing: recognizer.ID))")
         
         let revealViewController:SWRevealViewController = self.revealViewController()
         
@@ -140,7 +140,7 @@ class HomeViewController: UIViewController {
     }
     
     // Pass to the homeController
-    func goToAddListViewController (){
+    @IBAction func goToAddListViewController (){
         
         //Call the mainStoryBoard
         let mainStoryboard:UIStoryboard = UIStoryboard(name:"Main", bundle: nil)

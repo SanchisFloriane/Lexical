@@ -25,9 +25,10 @@ class AddThemeViewController: UIViewController, iCarouselDelegate, iCarouselData
     
     var listImgCarousel = [UIImage(named:"france.png"),UIImage(named:"germany.png"),UIImage(named:"china.png"),UIImage(named:"canada.png"), UIImage(named:"united-kingdom.png"), UIImage(named:"switzerland.png")]
     
+    // Do any additional setup after loading the view.
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+               
         btnNewTheme.isMultipleSelectionEnabled = true
         btnNewTheme.contentHorizontalAlignment = UIControlContentHorizontalAlignment.left
         

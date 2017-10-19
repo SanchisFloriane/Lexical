@@ -12,6 +12,8 @@ class LexicalICarousel: iCarousel, iCarouselDelegate, iCarouselDataSource {
     
     var listImage = [UIImage]()
     var indexLastSubViewCarousel : Int?
+    let colorBorderSelectedItem : CGColor = UIColor.blue.cgColor
+    let colorBorderNotSelectedItem : CGColor = UIColor.black.cgColor
     
     //Get listImage
     public func getListImage() -> [UIImage]
@@ -58,14 +60,13 @@ class LexicalICarousel: iCarousel, iCarouselDelegate, iCarouselDataSource {
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView
     {
         let tempView = UIView(frame: CGRect(x: 0, y: 0, width: 75, height: 75))
-        tempView.backgroundColor = UIColor.blue
         
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 75, height: 75))
         let img = listImage[index]
         button.setImage(img, for: .normal)
         button.backgroundColor = UIColor.white
-        button.layer.borderColor = UIColor.black.cgColor
-        button.layer.borderWidth = 1
+        button.layer.borderColor = colorBorderNotSelectedItem
+        button.layer.borderWidth = 2
         tempView.addSubview(button)
         return tempView
     }
@@ -73,7 +74,7 @@ class LexicalICarousel: iCarousel, iCarouselDelegate, iCarouselDataSource {
     //Change border color of selected item
     func setBorderColorImage(index: Int)
     {
-        itemView(at: index)?.subviews[0].layer.borderColor = UIColor.blue.cgColor
+        itemView(at: index)?.subviews[0].layer.borderColor = colorBorderSelectedItem
     }
     
     //Change size border of selected item
@@ -86,12 +87,22 @@ class LexicalICarousel: iCarousel, iCarouselDelegate, iCarouselDataSource {
     func carouselDidEndScrollingAnimation(_ carousel: iCarousel)
     {
         if indexLastSubViewCarousel != nil{
-            carousel.itemView(at: indexLastSubViewCarousel!)?.subviews[0].layer.borderColor = UIColor.black.cgColor
+            carousel.itemView(at: indexLastSubViewCarousel!)?.subviews[0].layer.borderColor = colorBorderNotSelectedItem
         }
         
         //Change border color of selected item
         self.setBorderColorImage(index: carousel.currentItemIndex)
         self.setBorderSizeImage(index: carousel.currentItemIndex)
         indexLastSubViewCarousel = carousel.currentItemIndex
+    }
+    
+    //Return true if the carousel[numberItem] is selected
+    func itemSelected(_ carousel: iCarousel, numberItem: Int) -> Bool
+    {
+        if carousel.itemView(at: numberItem)!.subviews[0].layer.borderColor == colorBorderNotSelectedItem
+        {
+            return true
+        }
+        return false
     }
 }
